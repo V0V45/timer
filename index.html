@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Таймер</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <form class="timer" method="post" action="/run" id="timerForm">
+        <label class="timer__label" for="timeInput">Введите время таймера:</label>
+        <div class="timer__inputAndUnit">
+            <input class="timer__inputAndUnit__input" id="timeInput" type="number" />
+            <select class="timer__inputAndUnit__unit" id="selector">
+                <option selected>секунд</option>
+                <option>минут</option>
+            </select>
+        </div>
+        <button class="timer__submitButton" id="submitButton" type="sumbit">Запустить таймер</button>
+    </form>
+    <div class="timerShowcase">
+        <h1 class="timerShowcase__minutes"></h1>
+        <h1 class="timerShowcase__colonSign"></h1>
+        <h1 class="timerShowcase__seconds"></h1>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
